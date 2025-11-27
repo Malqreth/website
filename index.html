@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Malqreth - Developer Portfolio - Modern Web Development">
+    <meta name="theme-color" content="#0f0f0f">
+    <title>Malqreth</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <nav id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Malqreth</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="label">Developer & Designer</span>
+                <h1>
+                    Creating digital<br>
+                    experiences that<br>
+                    <span class="gradient-text">matter</span>
+                </h1>
+                <p>Full-stack developer specializing in modern web applications with real-time capabilities and exceptional user experiences.</p>
+                <div class="hero-actions">
+                    <a href="#about" class="btn-primary">About Me</a>
+                    <a href="#contact" class="btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>About</h2>
+                    <p>Developer focused on building elegant, performant web applications. Experienced in modern frameworks, real-time systems, and creating seamless user experiences.</p>
+                    <div class="skills-list" id="skills"></div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-block">
+                        <pre><code>const developer = {
+  name: 'Malqreth',
+  role: 'Full Stack Developer',
+  focus: ['React', 'Node.js', 'WebSockets'],
+  passion: 'Building great software'
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="container">
+            <h2>Selected Work</h2>
+            <div class="projects-grid" id="projects"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+            <div class="contact-links">
+                <a href="https://github.com/Malqreth" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/@malqreth" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://discord.gg/wW7y4cHTmT" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div id="notifications"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
